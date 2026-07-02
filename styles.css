@@ -1,6 +1,6 @@
 /* Victor Sala Home Inspection — shared stylesheet (inner pages) */
 :root{
-  --navy:#15224f;--blue:#2b3f96;--blue2:#4a63c8;--red1:#e23a44;--red2:#c0121e;
+  --navy:#15224f;--blue:#2b3f96;--blue2:#4a63c8;--red1:#b83b48;--red2:#8f2532;
   --grey:#586074;--bg:#eaf0fb;--line:#e5e9f1;--ink:#111b38;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -35,8 +35,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
 .brand .mark{width:50px;height:50px;flex:0 0 auto}
 .brand .wm{line-height:1}
-.brand .wm .script{font-family:'Kaushan Script',cursive;font-size:22px;color:var(--navy);display:block;margin-bottom:1px}
-.brand .wm .sub{font-size:11px;font-weight:800;letter-spacing:.14em}
+.brand .wm .nm{font-size:20px;font-weight:800;letter-spacing:.02em;color:var(--navy);display:block;line-height:1}
+.brand .wm .sub{font-size:9.5px;font-weight:700;letter-spacing:.22em;color:#8f2532;display:block;margin-top:4px}
 .brand .wm .sub .h{color:var(--blue)}.brand .wm .sub .i{color:var(--navy)}
 .navlinks{display:flex;gap:22px;align-items:center}
 .navlinks a{font-weight:600;font-size:15px;color:var(--navy);opacity:.86}
@@ -134,9 +134,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .tcard h4{color:#fff;font-size:20px;margin-bottom:10px}.tcard p{color:#c3cdea;font-size:15px}
 
 /* CTA */
-.cta{background:linear-gradient(120deg,var(--red2),var(--red1));color:#fff;border-radius:26px;padding:60px;text-align:center;box-shadow:0 30px 70px -30px rgba(192,18,30,.6)}
+.cta{background:linear-gradient(130deg,#15224f,#27397e);color:#fff;border-radius:26px;padding:60px;text-align:center;box-shadow:0 30px 70px -30px rgba(21,34,79,.55)}
 .cta h2{color:#fff;font-size:clamp(28px,3.6vw,40px);margin:12px 0 14px}
-.cta p{color:#ffe1e3;font-size:18px;margin-bottom:26px}.cta .eyebrow{color:#ffd0d3}
+.cta p{color:#c4cde6;font-size:18px;margin-bottom:26px}.cta .eyebrow{color:#9db0e2}
 .cta .orcall{margin-top:16px;font-weight:700;color:#fff}
 .cta .orcall a{border-bottom:2px solid rgba(255,255,255,.6)}
 
@@ -146,7 +146,7 @@ footer{background:var(--ink);color:#aeb8d4;padding:64px 0 28px;font-size:15px}
 footer h5{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
 footer a{color:#aeb8d4}footer a:hover{color:#fff}
 footer li{list-style:none;margin-bottom:9px}
-.fbrand .script{font-family:'Kaushan Script',cursive;font-size:26px;color:#fff;margin-bottom:6px}
+.fbrand .fnm{font-size:22px;font-weight:800;letter-spacing:.03em;color:#fff;margin-bottom:8px}
 .fbrand p{max-width:300px;margin-bottom:16px}
 .fcred{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#8894b6}
 .fcred b{color:#cdd6ee;font-weight:700}
