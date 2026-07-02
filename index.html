@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor Sala Home Inspection LLC — Licensed NY &amp; NJ Home Inspector</title>
+<meta name="description" content="Licensed &amp; insured home inspector serving New York &amp; New Jersey. 30+ years construction experience, 5.0 Google rating across 304 reviews. Full-color report with photos &amp; video in 24 hours. Radon, oil tank sweep, sewer scope, drone &amp; thermal imaging. Call 347-387-2561.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#15224f;      /* deep brand ink — headings */
+  --blue:#2b3f96;      /* primary brand blue */
+  --blue2:#4a63c8;     /* lighter primary — gradient twin */
+  --red1:#e23a44;      /* accent start */
+  --red2:#c0121e;      /* accent end */
+  --grey:#586074;      /* body copy */
+  --bg:#eaf0fb;        /* soft tinted band */
+  --line:#e5e9f1;      /* hairline */
+  --ink:#111b38;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--grey);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{color:var(--navy);letter-spacing:-.02em;line-height:1.1;font-weight:800}
+a{text-decoration:none;color:inherit}
+img,svg{max-width:100%;display:block}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+.gold{background:linear-gradient(120deg,var(--red1),var(--red2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.blueg{background:linear-gradient(120deg,var(--blue),var(--blue2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:16px;border-radius:999px;padding:15px 28px;transition:.2s;cursor:pointer;border:0}
+.btn span{transition:.2s}
+.btn:hover span{transform:translateX(3px)}
+.btn-blue{background:linear-gradient(120deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 12px 26px -10px rgba(43,63,150,.6)}
+.btn-red{background:linear-gradient(120deg,var(--red1),var(--red2));color:#fff;box-shadow:0 12px 26px -10px rgba(192,18,30,.55)}
+.btn:hover{transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line);box-shadow:0 8px 20px -12px rgba(13,40,80,.15)}
+.link{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--blue)}
+.link:hover{gap:11px}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:800;color:var(--red2)}
+.sec{padding:92px 0}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 54px}
+.sec-head h2{font-size:clamp(30px,4vw,44px);margin:14px 0 16px}
+.sec-head p{font-size:18px}
+
+/* ---------- announcement bar ---------- */
+.topbar{background:var(--navy);color:#cdd7f0;text-align:center;font-size:13px;font-weight:600;letter-spacing:.06em;padding:9px 16px}
+.topbar b{color:#fff}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:26px;padding:14px 40px;max-width:1320px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.brand .mark{width:50px;height:50px;flex:0 0 auto}
+.brand .wm{line-height:1}
+.brand .wm .script{font-family:'Kaushan Script',cursive;font-size:22px;color:var(--navy);display:block;margin-bottom:1px}
+.brand .wm .sub{font-size:11px;font-weight:800;letter-spacing:.14em}
+.brand .wm .sub .h{color:var(--blue)}
+.brand .wm .sub .i{color:var(--navy)}
+.navlinks{display:flex;gap:22px;align-items:center}
+.navlinks a{font-weight:600;font-size:15px;color:var(--navy);opacity:.86}
+.navlinks a:hover{opacity:1;color:var(--blue)}
+.callbtn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;white-space:nowrap;
+  background:linear-gradient(120deg,var(--red1),var(--red2));color:#fff;border-radius:999px;padding:11px 18px;
+  box-shadow:0 8px 18px -6px rgba(192,18,30,.5);transition:.2s}
+.callbtn:hover{transform:translateY(-1px)}
+.book{display:inline-flex;align-items:center;font-weight:700;font-size:15px;background:linear-gradient(120deg,var(--blue),var(--blue2));color:#fff;border-radius:999px;padding:11px 20px;box-shadow:0 8px 18px -6px rgba(43,63,150,.5)}
+.book:hover{transform:translateY(-1px)}
+.hamb{display:none}
+
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(112deg,#e4ecfb 0%,#eff4fd 42%,#fff 78%);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding-top:74px;padding-bottom:80px}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:18px 0 20px}
+.hero p.lead{font-size:19px;max-width:540px;margin-bottom:14px}
+.hero .disc{font-size:14.5px;color:var(--grey);margin-bottom:26px;max-width:520px}
+.hero .cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:26px}
+.trustline{display:flex;align-items:center;gap:13px;font-size:14.5px;font-weight:600;color:var(--navy)}
+.hero-art{position:relative}
+.hero-card{background:#fff;border-radius:22px;box-shadow:0 30px 70px -26px rgba(13,40,80,.34);padding:22px;border:1px solid var(--line)}
+.statchip{position:absolute;right:-14px;bottom:26px;background:linear-gradient(120deg,var(--red1),var(--red2));color:#fff;border-radius:16px;padding:14px 20px;box-shadow:0 18px 34px -12px rgba(192,18,30,.5)}
+.statchip b{font-size:26px;font-weight:800;display:block;line-height:1}
+.statchip span{font-size:12.5px;font-weight:700;opacity:.92;letter-spacing:.03em}
+.badgechip{position:absolute;left:-16px;top:22px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:11px 16px;box-shadow:0 18px 34px -14px rgba(13,40,80,.28);display:flex;align-items:center;gap:10px}
+.badgechip b{color:var(--navy);font-size:17px;font-weight:800;line-height:1}
+.badgechip span{font-size:11.5px;font-weight:700;color:var(--grey)}
+
+/* ---------- stats bar ---------- */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:34px 40px}
+.stat{text-align:center;padding:8px 10px;border-right:1px solid rgba(255,255,255,.13)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:30px;font-weight:800;color:#fff;line-height:1.05}
+.stat b em{font-style:normal;background:linear-gradient(120deg,#ff8a90,#ffd4d6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat span{font-size:13.5px;color:#b9c4e4;font-weight:600}
+
+/* ---------- split cards ---------- */
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 20px 46px -22px rgba(13,40,80,.16);transition:.25s}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 30px 60px -24px rgba(13,40,80,.26)}
+.pcard .top{height:150px;display:flex;align-items:center;justify-content:center;position:relative}
+.pcard .body{padding:28px 30px 32px}
+.pcard h3{font-size:24px;margin-bottom:10px}
+.pcard p{margin-bottom:18px}
+
+/* ---------- money band (add-ons) ---------- */
+.band{background:var(--bg)}
+.addgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.addcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 22px;box-shadow:0 14px 34px -20px rgba(13,40,80,.16);transition:.22s}
+.addcard:hover{transform:translateY(-4px);box-shadow:0 24px 46px -22px rgba(13,40,80,.24);border-color:#d5def3}
+.ico{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,#eef2fd,#e2e9fb);display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+.addcard h4{font-size:18px;margin-bottom:7px}
+.addcard p{font-size:14.5px}
+
+/* ---------- why-us ---------- */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.feat .bar{width:44px;height:5px;border-radius:4px;background:linear-gradient(90deg,var(--red1),var(--red2));margin-bottom:18px}
+.feat h4{font-size:19px;margin-bottom:9px}
+.feat p{font-size:15px}
+
+/* ---------- trends band ---------- */
+.trends{background:linear-gradient(160deg,#12204d,#1c2f6b)}
+.trends .sec-head h2,.trends .sec-head p{color:#fff}
+.trends .sec-head p{color:#c3cdea}
+.trends .eyebrow{color:#ff9ba0}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tcard{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px 26px}
+.tcard .tnum{font-size:13px;font-weight:800;letter-spacing:.12em;color:#ff9ba0;margin-bottom:12px}
+.tcard h4{color:#fff;font-size:20px;margin-bottom:10px}
+.tcard p{color:#c3cdea;font-size:15px}
+
+/* ---------- reviews ---------- */
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.review{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 26px;box-shadow:0 18px 40px -24px rgba(13,40,80,.18);display:flex;flex-direction:column}
+.stars{display:flex;gap:3px;margin-bottom:14px}
+.review p{color:#404a63;font-size:15.5px;margin-bottom:18px;flex:1}
+.review .who{display:flex;align-items:center;gap:12px}
+.review .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.review .nm{font-weight:800;color:var(--navy);font-size:15px;line-height:1.2}
+.review .dt{font-size:12.5px;color:var(--grey)}
+.revhead{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:44px;flex-wrap:wrap}
+.gscore{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 22px;box-shadow:0 14px 34px -20px rgba(13,40,80,.2)}
+.gscore .n{font-size:34px;font-weight:800;color:var(--navy);line-height:1}
+.gscore small{font-size:13px;color:var(--grey);font-weight:600}
+
+/* ---------- CTA band ---------- */
+.cta{background:linear-gradient(120deg,var(--red2),var(--red1));color:#fff;border-radius:26px;padding:60px;text-align:center;position:relative;overflow:hidden;box-shadow:0 30px 70px -30px rgba(192,18,30,.6)}
+.cta h2{color:#fff;font-size:clamp(28px,3.6vw,40px);margin:12px 0 14px}
+.cta p{color:#ffe1e3;font-size:18px;margin-bottom:26px}
+.cta .eyebrow{color:#ffd0d3}
+.cta .btn-white{background:#fff;color:var(--red2)}
+.cta .orcall{margin-top:16px;font-weight:700;color:#fff}
+.cta .orcall a{border-bottom:2px solid rgba(255,255,255,.6)}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#aeb8d4;padding:64px 0 28px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:40px}
+footer h5{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+footer a{color:#aeb8d4}footer a:hover{color:#fff}
+footer li{list-style:none;margin-bottom:9px}
+.fbrand .script{font-family:'Kaushan Script',cursive;font-size:26px;color:#fff;margin-bottom:6px}
+.fbrand p{max-width:300px;margin-bottom:16px}
+.fcred{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#8894b6}
+.fcred b{color:#cdd6ee;font-weight:700}
+
+/* ---------- mobile call bar ---------- */
+.mobilecall{display:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .wrap{padding:0 22px}.nav{padding:12px 22px;gap:14px}
+  .navlinks,.book{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:54px;gap:36px}
+  .hero-art{order:-1}
+  .stats .wrap{grid-template-columns:1fr 1fr;gap:20px 12px}
+  .stat:nth-child(2){border-right:0}
+  .cards2,.addgrid,.feats,.tgrid,.revgrid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr;gap:28px}
+  .sec{padding:60px 0}.cta{padding:40px 26px}
+  .callbtn{padding:9px 14px;font-size:14px}
+  .mobilecall{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;box-shadow:0 -4px 16px rgba(0,0,0,.14)}
+  .mobilecall a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;font-weight:800;font-size:16px}
+  .mobilecall .call{background:linear-gradient(120deg,var(--red1),var(--red2));color:#fff}
+  .mobilecall .bk{background:linear-gradient(120deg,var(--blue),var(--blue2));color:#fff}
+  body{padding-bottom:56px}
+}
+@media(max-width:560px){.fgrid{grid-template-columns:1fr}.addgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar">NYS LIC# <b>16000134383</b> &nbsp;·&nbsp; NJ LIC# <b>24GI00226900</b> &nbsp;·&nbsp; InterNACHI# <b>I21031872</b></div>
+
+<header>
+<nav class="nav">
+  <a class="brand" href="index.html" aria-label="Victor Sala Home Inspection">
+    <svg class="mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Victor Sala Home Inspection logo">
+      <path d="M11 34.5 32 17l21 17.5V56a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V34.5Z" fill="#15224f"/>
+      <path d="M32 14 8 34.2l2.6 3L32 19.4l21.4 17.8 2.6-3L32 14Z" fill="#2b3f96"/>
+      <rect x="40" y="20" width="6" height="12" rx="1" fill="#15224f"/>
+      <rect x="26" y="40" width="12" height="18" rx="1.5" fill="#fff"/>
+      <rect x="28.4" y="42.4" width="7.2" height="6" rx=".6" fill="#e23a44"/>
+      <circle cx="26" cy="24" r="10.5" fill="#fff" stroke="#2b3f96" stroke-width="3.2"/>
+      <circle cx="26" cy="24" r="6.2" fill="#eaf0fb"/>
+      <rect x="32.5" y="30.5" width="4.4" height="13" rx="2.2" transform="rotate(-45 32.5 30.5)" fill="#e23a44"/>
+    </svg>
+    <span class="wm">
+      <span class="script">Victor Sala</span>
+      <span class="sub"><span class="h">HOME</span> <span class="i">INSPECTION</span></span>
+    </span>
+  </a>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="inspections.html">Inspections</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="callbtn" href="tel:13473872561">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm-5 21c-.83 0-1.5-.67-1.5-1.5S11.17 19 12 19s1.5.67 1.5 1.5S12.83 22 12 22zm5-4H7V4h10v14z"/></svg>
+    Call (347) 387-2561
+  </a>
+  <a class="book" href="contact.html">Book Inspection</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Licensed NY &amp; NJ Home Inspector</span>
+      <h1>Know exactly what you're buying — <span class="gold">before</span> you sign.</h1>
+      <p class="lead">Victor Sala personally inspects every home with 30+ years of hands-on construction experience. Thorough, honest, and never an alarmist.</p>
+      <p class="disc">Full-color report with photos and video delivered within 24 hours. Serving all of New York &amp; New Jersey.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:13473872561">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm-5 21c-.83 0-1.5-.67-1.5-1.5S11.17 19 12 19s1.5.67 1.5 1.5S12.83 22 12 22zm5-4H7V4h10v14z"/></svg>
+          Call 347-387-2561
+        </a>
+        <a class="link" href="contact.html">Schedule online <span>&rarr;</span></a>
+      </div>
+      <div class="trustline">
+        <svg width="118" height="22" viewBox="0 0 118 22" role="img" aria-label="5.0 stars, 304 Google reviews">
+          <defs><linearGradient id="stg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf4d"/><stop offset="1" stop-color="#f6a821"/></linearGradient></defs>
+          <g fill="url(#stg)">
+            <path d="M11 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L11 15.1 5.9 18l1-5.8L2.7 8.1l5.8-.8L11 2z"/>
+            <path d="M33 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L33 15.1 27.9 18l1-5.8-4.2-4.1 5.8-.8L33 2z"/>
+            <path d="M55 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L55 15.1 49.9 18l1-5.8-4.2-4.1 5.8-.8L55 2z"/>
+            <path d="M77 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L77 15.1 71.9 18l1-5.8-4.2-4.1 5.8-.8L77 2z"/>
+            <path d="M99 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L99 15.1 93.9 18l1-5.8-4.2-4.1 5.8-.8L99 2z"/>
+          </g>
+        </svg>
+        <span><b style="color:var(--navy)">5.0</b> · 304 Google reviews</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="badgechip">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#eaf0fb"/><path d="M7 12.5l3 3L17 8.5" stroke="#2b3f96" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>Licensed &amp; Insured</b><br><span>NY &amp; NJ · InterNACHI Certified</span></div>
+      </div>
+      <div class="hero-card">
+        <svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a home inspection">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eff4fd"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+            <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b3f96"/><stop offset="1" stop-color="#15224f"/></linearGradient>
+          </defs>
+          <rect width="520" height="400" rx="16" fill="url(#sky)"/>
+          <!-- ground -->
+          <rect x="0" y="332" width="520" height="68" fill="#eaf0fb"/>
+          <!-- trees -->
+          <circle cx="70" cy="300" r="30" fill="#dbe4f6"/><rect x="66" y="300" width="8" height="34" fill="#c7d2ec"/>
+          <circle cx="460" cy="292" r="34" fill="#dbe4f6"/><rect x="456" y="292" width="9" height="42" fill="#c7d2ec"/>
+          <!-- house body -->
+          <rect x="150" y="196" width="220" height="140" rx="4" fill="#fff" stroke="#d5def3" stroke-width="2"/>
+          <!-- roof -->
+          <path d="M132 202 260 108 388 202Z" fill="url(#roof)"/>
+          <rect x="330" y="140" width="20" height="40" rx="2" fill="#15224f"/>
+          <!-- door -->
+          <rect x="240" y="256" width="40" height="80" rx="3" fill="#2b3f96"/>
+          <circle cx="272" cy="298" r="3" fill="#ffcf4d"/>
+          <!-- windows -->
+          <rect x="176" y="228" width="44" height="44" rx="3" fill="#eaf0fb" stroke="#2b3f96" stroke-width="2"/>
+          <rect x="300" y="228" width="44" height="44" rx="3" fill="#eaf0fb" stroke="#2b3f96" stroke-width="2"/>
+          <path d="M198 228v44M176 250h44M322 228v44M300 250h44" stroke="#2b3f96" stroke-width="1.6"/>
+          <!-- red accent under roof -->
+          <rect x="150" y="196" width="220" height="8" fill="#e23a44"/>
+          <!-- magnifying glass over house -->
+          <circle cx="392" cy="248" r="46" fill="#fff" fill-opacity=".55" stroke="#e23a44" stroke-width="6"/>
+          <circle cx="392" cy="248" r="46" fill="none" stroke="#fff" stroke-width="1.4"/>
+          <rect x="420" y="276" width="16" height="52" rx="8" transform="rotate(-45 420 276)" fill="#c0121e"/>
+          <!-- checkmark inside glass -->
+          <path d="M378 248l9 9 18-20" stroke="#2b3f96" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="statchip"><b>24-Hr</b><span>Report with photos &amp; video</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><b><em>30+</em></b><span>Years in construction</span></div>
+    <div class="stat"><b><em>5.0</em> ★</b><span>Across 304 Google reviews</span></div>
+    <div class="stat"><b>NY &amp; NJ</b><span>Licensed &amp; fully insured</span></div>
+    <div class="stat"><b><em>24-Hr</em></b><span>Photo &amp; video reports</span></div>
+  </div>
+</section>
+
+<!-- SPLIT CARDS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What Victor Inspects</span>
+      <h2>Residential &amp; commercial property inspections</h2>
+      <p>From a first condo to a full commercial building — one licensed inspector, start to finish, with a report you can actually understand.</p>
+    </div>
+    <div class="cards2">
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(120deg,#eaf0fb,#dbe4f6)">
+          <svg width="92" height="92" viewBox="0 0 64 64" fill="none"><path d="M12 32 32 16l20 16v22a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V32Z" fill="#2b3f96"/><path d="M32 13 8 32.5l3 3.5L32 18l21 18 3-3.5L32 13Z" fill="#15224f"/><rect x="27" y="42" width="10" height="14" fill="#fff"/></svg>
+        </div>
+        <div class="body">
+          <h3>Residential Inspection</h3>
+          <p>A top-to-bottom evaluation of the home — roof, structure, electrical, HVAC, plumbing, and more — so you know the true condition before you commit. Pre-listing and seller's inspections available too.</p>
+          <a class="link" href="inspections.html">See what's covered <span>&rarr;</span></a>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(120deg,#f7e9ea,#f2d7d9)">
+          <svg width="92" height="92" viewBox="0 0 64 64" fill="none"><rect x="12" y="20" width="40" height="36" rx="2" fill="#c0121e"/><rect x="12" y="20" width="40" height="8" fill="#15224f"/><rect x="18" y="32" width="7" height="7" fill="#fff"/><rect x="29" y="32" width="7" height="7" fill="#fff"/><rect x="40" y="32" width="7" height="7" fill="#fff"/><rect x="18" y="44" width="7" height="7" fill="#fff"/><rect x="40" y="44" width="7" height="12" fill="#15224f"/></svg>
+        </div>
+        <div class="body">
+          <h3>Commercial Inspection</h3>
+          <p>Retail, office, multi-unit and mixed-use buildings evaluated with the same rigor. Trusted by brokers and real-estate agents across NY &amp; NJ for clear, defensible reporting.</p>
+          <a class="link" href="inspections.html">See what's covered <span>&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ONS / MONEY BAND -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Specialty &amp; Add-On Services</span>
+      <h2>The inspections that save buyers <span class="gold">six figures</span></h2>
+      <p>Bundle these with your inspection in one visit. In NY &amp; NJ, a few of these can be the difference between a smart purchase and a costly surprise.</p>
+    </div>
+    <div class="addgrid">
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="11" rx="2" fill="#2b3f96"/><rect x="8" y="4" width="8" height="5" rx="1" fill="#15224f"/><circle cx="12" cy="13.5" r="2.4" fill="#fff"/></svg></div><h4>Oil Tank Sweep</h4><p>Detect buried tanks before you buy — a leaking tank can mean $100k+ in cleanup.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" fill="#c0121e"/><ellipse cx="12" cy="12" rx="9" ry="3.6" stroke="#2b3f96" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" stroke="#2b3f96" stroke-width="1.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" stroke="#2b3f96" stroke-width="1.6" transform="rotate(120 12 12)"/></svg></div><h4>Radon Testing</h4><p>The #2 cause of lung cancer. Colorless, odorless — and common across the region.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 15c0-5 3-8 8-8h8" stroke="#2b3f96" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="6" cy="17" r="2.4" fill="#c0121e"/><path d="M17 4l3 3-3 3" stroke="#2b3f96" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Sewer Scope</h4><p>A camera down the main line finds root intrusion and breaks before they cost you.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="13" rx="3" fill="#2b3f96"/><circle cx="12" cy="18" r="4" fill="#c0121e"/><rect x="10.6" y="8" width="2.8" height="9" fill="#c0121e"/></svg></div><h4>Thermal Imaging</h4><p>Infrared reveals hidden moisture, missing insulation and electrical hot spots.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="3" fill="#2b3f96"/><rect x="5" y="10" width="14" height="3" rx="1.5" fill="#15224f"/><circle cx="6" cy="15" r="2.3" fill="#c0121e"/><circle cx="18" cy="15" r="2.3" fill="#c0121e"/><path d="M12 10v5" stroke="#15224f" stroke-width="2"/></svg></div><h4>Drone Roof Inspection</h4><p>High-resolution aerial views of steep or unsafe roofs — no guesswork.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M7 20c-2-3-2-6 1-9 1 2 2 2.5 3 3 1-3 0-6-2-9 5 2 8 6 8 11a6.9 6.9 0 0 1-3 6" stroke="#c0121e" stroke-width="1.8" fill="#f7dede"/></svg></div><h4>Wood-Destroying Insects</h4><p>Termite &amp; WDI reports — required by many lenders, essential in older homes.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1.5" fill="#2b3f96"/><path d="M7 10V7a5 5 0 0 1 10 0v3" stroke="#15224f" stroke-width="2" fill="none"/><path d="M9 15l2 2 4-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Mold &amp; Air Quality</h4><p>Mold, lead-based paint and home-health testing for peace of mind.</p></div>
+      <div class="addcard"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20V9l5-4 5 4v11" fill="#2b3f96"/><rect x="14" y="8" width="6" height="12" fill="#15224f"/><path d="M16 8c0-2 1-3 1-4M18 8c0-2 1-3 1-4" stroke="#c0121e" stroke-width="1.6" stroke-linecap="round"/></svg></div><h4>Fireplace &amp; Chimney</h4><p>Plus pool &amp; spa, energy audits, and pipe &amp; cable locating on request.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a class="btn btn-blue" href="inspections.html">View all inspection services <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why Buyers &amp; Agents Choose Victor</span>
+      <h2>A tradesman's eye. A straight answer.</h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><div class="bar"></div><h4>30+ years on the tools</h4><p>Deep hands-on education in carpentry, HVAC, roofing, electrical and plumbing — Victor knows how homes are actually built.</p></div>
+      <div class="feat"><div class="bar"></div><h4>Never an alarmist</h4><p>You get the real condition and what matters most — not scare tactics. Just an honest picture so you can decide with confidence.</p></div>
+      <div class="feat"><div class="bar"></div><h4>Report in 24 hours</h4><p>A full-color report with photos and video, delivered within a day so your deal keeps moving.</p></div>
+      <div class="feat"><div class="bar"></div><h4>Veteran &amp; service discounts</h4><p>Veteran, Senior and Police discounts — Victor's way of giving back to the community he serves.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKET TRENDS BAND -->
+<section class="sec trends">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What's Changing in 2026</span>
+      <h2>The inspection has never mattered more</h2>
+      <p>As bidding wars cool, buyers are keeping their inspections — and expecting more from them. Victor already offers what the rest of the industry is racing to catch up to.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard"><div class="tnum">01 · DRONE &amp; THERMAL</div><h4>Now expected, not extra</h4><p>Drone roof and thermal-imaging inspections are shifting from premium add-ons to standard practice. Victor has offered both for years.</p></div>
+      <div class="tcard"><div class="tnum">02 · OIL TANK SWEEPS</div><h4>A six-figure safeguard</h4><p>Underground oil tanks hide in a large share of older NY &amp; NJ homes. One sweep can prevent a cleanup bill north of $100,000.</p></div>
+      <div class="tcard"><div class="tnum">03 · INSPECTIONS ARE BACK</div><h4>Only 14% now waive</h4><p>The lowest share in five years. A thorough, bundled inspection — radon, sewer, WDI and more in one visit — is the new normal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Verified 5-Star Reviews</span>
+      <h2>304 reviews. One rating: <span class="gold">5.0</span>.</h2>
+    </div>
+    <div class="revhead">
+      <div class="gscore">
+        <svg width="34" height="34" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1Z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84Z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38Z"/></svg>
+        <div><span class="n">5.0</span><br><small>304 Google reviews</small></div>
+      </div>
+      <div class="stars">
+        <svg width="150" height="26" viewBox="0 0 118 22"><defs><linearGradient id="stg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf4d"/><stop offset="1" stop-color="#f6a821"/></linearGradient></defs><g fill="url(#stg2)"><path d="M11 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L11 15.1 5.9 18l1-5.8L2.7 8.1l5.8-.8L11 2z"/><path d="M33 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L33 15.1 27.9 18l1-5.8-4.2-4.1 5.8-.8L33 2z"/><path d="M55 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L55 15.1 49.9 18l1-5.8-4.2-4.1 5.8-.8L55 2z"/><path d="M77 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L77 15.1 71.9 18l1-5.8-4.2-4.1 5.8-.8L77 2z"/><path d="M99 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L99 15.1 93.9 18l1-5.8-4.2-4.1 5.8-.8L99 2z"/></g></svg>
+      </div>
+    </div>
+    <div class="revgrid">
+      <div class="review"><div class="stars"><svg width="104" height="18" viewBox="0 0 118 22"><g fill="#f6a821"><path d="M11 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L11 15.1 5.9 18l1-5.8L2.7 8.1l5.8-.8z"/><path d="M33 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L33 15.1 27.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M55 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L55 15.1 49.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M77 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L77 15.1 71.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M99 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L99 15.1 93.9 18l1-5.8-4.2-4.1 5.8-.8z"/></g></svg></div><p>"I got my home inspection done by Victor — there's not a single bad thing you can say about him and his professionalism. He truly cares for the purchaser, thoroughly checking everything. He took his time and didn't miss a single thing. He'll have you feeling safe about buying your home!"</p><div class="who"><div class="av">F</div><div><div class="nm">Frankie Paterno</div><div class="dt">Google review</div></div></div></div>
+      <div class="review"><div class="stars"><svg width="104" height="18" viewBox="0 0 118 22"><g fill="#f6a821"><path d="M11 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L11 15.1 5.9 18l1-5.8L2.7 8.1l5.8-.8z"/><path d="M33 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L33 15.1 27.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M55 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L55 15.1 49.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M77 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L77 15.1 71.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M99 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L99 15.1 93.9 18l1-5.8-4.2-4.1 5.8-.8z"/></g></svg></div><p>"Recently, Victor handled the inspection for my condo. He was professional, yet warm and friendly. It was clear that he takes his work very seriously. He was extremely thorough, took his time, and answered all my questions during the inspection."</p><div class="who"><div class="av">D</div><div><div class="nm">Danielle Santoro</div><div class="dt">Google review</div></div></div></div>
+      <div class="review"><div class="stars"><svg width="104" height="18" viewBox="0 0 118 22"><g fill="#f6a821"><path d="M11 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L11 15.1 5.9 18l1-5.8L2.7 8.1l5.8-.8z"/><path d="M33 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L33 15.1 27.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M55 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L55 15.1 49.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M77 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L77 15.1 71.9 18l1-5.8-4.2-4.1 5.8-.8z"/><path d="M99 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L99 15.1 93.9 18l1-5.8-4.2-4.1 5.8-.8z"/></g></svg></div><p>"Victor was extremely thorough, professional, and patient throughout. Very pleasant, informative — he explained everything clearly. I highly recommend him to anyone buying a home in New York or New Jersey."</p><div class="who"><div class="av">C</div><div><div class="nm">Crysilda Aspromonte</div><div class="dt">Google review</div></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a class="btn btn-blue" href="reviews.html">Read more reviews <span>&rarr;</span></a></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec"><div class="wrap">
+  <div class="cta">
+    <span class="eyebrow">Ready When You Are</span>
+    <h2>Book your inspection with confidence</h2>
+    <p>Serving New York &amp; New Jersey · Report with photos &amp; video in 24 hours</p>
+    <a class="btn btn-white" href="contact.html">Schedule my inspection <span>&rarr;</span></a>
+    <div class="orcall">or call <a href="tel:13473872561">347-387-2561</a></div>
+  </div>
+</div></section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <div class="script">Victor Sala</div>
+        <p>Licensed &amp; insured home inspection serving New York &amp; New Jersey. 30+ years of construction experience on every inspection.</p>
+        <a class="btn btn-red" href="tel:13473872561" style="font-size:15px;padding:12px 22px">Call 347-387-2561</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inspections.html">Inspections</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about.html">About Victor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="inspections.html">Home Inspection</a></li>
+          <li><a href="inspections.html">Commercial</a></li>
+          <li><a href="inspections.html">Oil Tank Sweep</a></li>
+          <li><a href="inspections.html">Radon Testing</a></li>
+          <li><a href="inspections.html">Sewer Scope</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:13473872561">347-387-2561</a></li>
+          <li>Staten Island, New York</li>
+          <li>Serving NY &amp; NJ</li>
+          <li>Veteran · Senior · Police discounts</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fcred">
+      <span>© 2026 Victor Sala Home Inspection LLC · All rights reserved.</span>
+      <span><b>NYS LIC#</b> 16000134383 &nbsp; <b>NJ LIC#</b> 24GI00226900 &nbsp; <b>InterNACHI#</b> I21031872</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobilecall">
+  <a class="call" href="tel:13473872561">&#9742; Call Now</a>
+  <a class="bk" href="contact.html">Book Free</a>
+</div>
+
+</body>
+</html>
