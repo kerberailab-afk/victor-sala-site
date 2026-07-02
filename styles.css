@@ -38,7 +38,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .brand .wm .nm{font-size:20px;font-weight:800;letter-spacing:.02em;color:var(--navy);display:block;line-height:1}
 .brand .wm .sub{font-size:9.5px;font-weight:700;letter-spacing:.22em;color:#8f2532;display:block;margin-top:4px}
 .brand .wm .sub .h{color:var(--blue)}.brand .wm .sub .i{color:var(--navy)}
-.navlinks{display:flex;gap:22px;align-items:center}
+.brand{display:flex;align-items:center;margin-right:auto}.bmark{display:flex;flex-direction:column;align-items:center;line-height:1}.bmark .roof{width:150px;height:29px;display:block;margin-bottom:1px}.bmark .bnm{font-weight:800;font-size:19px;letter-spacing:.03em;color:var(--navy);line-height:1}.bmark .bsub{font-weight:700;font-size:8.5px;letter-spacing:.30em;color:#8f2532;margin-top:3px}.fmark{align-items:flex-start}.fmark .bnm{color:#fff}.fmark .bsub{color:#cf9aa1}.fbrand .fmark{margin-bottom:14px}.navlinks{display:flex;gap:22px;align-items:center}
 .navlinks a{font-weight:600;font-size:15px;color:var(--navy);opacity:.86}
 .navlinks a:hover,.navlinks a.active{opacity:1;color:var(--blue)}
 .callbtn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;white-space:nowrap;background:linear-gradient(120deg,var(--red1),var(--red2));color:#fff;border-radius:999px;padding:11px 18px;box-shadow:0 8px 18px -6px rgba(192,18,30,.5);transition:.2s}
@@ -91,8 +91,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .stat{text-align:center;padding:8px 10px;border-right:1px solid rgba(255,255,255,.13)}
 .stat:last-child{border-right:0}
 .stat b{display:block;font-size:30px;font-weight:800;color:#fff;line-height:1.05}
-.stat b em{font-style:normal;background:linear-gradient(120deg,#ff8a90,#ffd4d6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.stat span{font-size:13.5px;color:#b9c4e4;font-weight:600}
+.stat b em{font-style:normal;color:#fff}
+.stat span{font-size:13.5px;color:#b9c4e4;font-weight:600}.stat::after{content:'';display:block;width:26px;height:3px;border-radius:2px;background:linear-gradient(90deg,#b83b48,#8f2532);margin:13px auto 0}
 
 /* reviews */
 .revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
