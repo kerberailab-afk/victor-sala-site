@@ -145,7 +145,7 @@ footer{background:var(--ink);color:#aeb8d4;padding:64px 0 28px;font-size:15px}
 .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:40px}
 footer h5{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
 footer a{color:#aeb8d4}footer a:hover{color:#fff}
-footer li{list-style:none;margin-bottom:9px}
+footer li{list-style:none;margin-bottom:9px}.social{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}.social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#c3cce4;transition:.18s}.social a:hover{background:var(--red1);color:#fff;transform:translateY(-2px)}.social svg{width:18px;height:18px;fill:currentColor}
 .fbrand .fnm{font-size:22px;font-weight:800;letter-spacing:.03em;color:#fff;margin-bottom:8px}
 .fbrand p{max-width:300px;margin-bottom:16px}
 .fcred{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#8894b6}
